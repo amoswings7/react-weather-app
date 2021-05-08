@@ -352,7 +352,7 @@
       display: none;
     }
     .App {
-      background-image: linear-gradient(90deg,#0094ff,#dff2ff);
+      background:#a4dbff;
     }
     .nav-bar .nav-search-bar{
       flex-direction: column-reverse;
