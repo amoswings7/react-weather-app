@@ -18,7 +18,7 @@ function App() {
     setLoading(true)
     const passcodekey = 'appid'
     const password = '7bd717dc76c91a0893bd61ca2da801e2'
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city_name}&${passcodekey}=${password}&units=${units}`).then(res =>{
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city_name}&${passcodekey}=${password}&units=${units}`).then(res =>{
       if(!res.ok){
         alert('oops sorry your city wasn\'t found please enter a valid city name');
         return false
@@ -35,7 +35,7 @@ function App() {
       console.log(err)
     })
 
-    fetch(`http://api.openweathermap.org/data/2.5/forecast?q=${city_name}&mode=json&${passcodekey}=${password}&units=${units}`).then(res=>{
+    fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city_name}&mode=json&${passcodekey}=${password}&units=${units}`).then(res=>{
       if(!res.ok){
         alert('oops sorry your city wasn\'t found please enter a valid city name');
         return false
